@@ -52,8 +52,7 @@ $(document).ready(function() {
 
 
   function logInGoogle() {
-    alert('holitass');
-    
+
     event.preventDefault();
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then(function(result) {
