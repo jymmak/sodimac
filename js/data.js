@@ -3,31 +3,31 @@ const data = [
     proveedor: 'Pacasmayo',
     categoría: 'cemento',
     cantidad: '100',
-    código: '6193'
+    codigo: '6193'
   },
   {
     proveedor: 'Pirámide',
     categoría: 'ladrillos',
     cantidad: '200',
-    código: '2074'
+    codigo: '2074'
   },
   {
     proveedor: 'Goodyear',
     categoría: 'llantas',
     cantidad: '150',
-    código: '9136'
+    codigo: '9136'
   },
   {
     proveedor: 'Dewalt',
     categoría: 'taladros',
     cantidad: '200',
-    código: '2864'
+    codigo: '2864'
   },
   {
     proveedor: 'Home Collection',
     categoría: 'alfombras',
     cantidad: '500',
-    código: '1420'
+    codigo: '1420'
   }
 ];
 
