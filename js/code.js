@@ -53,10 +53,12 @@ btnEnviarForm.on('click', submitForm);
         console.log(localStorage.quantity);
 
         
-       
+    
 
-
-      }     
+      }  
+      // else {
+      //   alert('datos incorrectos')
+      // }   
     });
 
     
