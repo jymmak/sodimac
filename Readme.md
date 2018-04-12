@@ -4,7 +4,7 @@ vehículos de proveedores sin requerir la presencia de personal.
 
  
 
-![Sodimac-preview](https://user-images.githubusercontent.com/32302955/38687900-65740494-3e3d-11e8-8557-94f16c0656a4.png)
+![Sodimac-preview](https://user-images.githubusercontent.com/32302955/38688324-62f1a93c-3e3e-11e8-8c97-ba0e76605693.png)
 
 
 
