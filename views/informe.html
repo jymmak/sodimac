@@ -20,14 +20,14 @@
     <div class="two fields">
       <div class="field">
         <label>Proveedor:</label>
-        <input placeholder="Proveedor" name="proveedor" type="text">
+        <input id="provider" placeholder="Proveedor" name="proveedor" type="text">
       </div>
     </div>
 
     <div class="two fields">
       <div class="field">
         <label>Categoria:</label>
-        <input placeholder="Categoria" name="category" type="text">
+        <input id="category" placeholder="Categoria" name="category" type="text">
       </div>
      
     </div>
@@ -35,7 +35,7 @@
     <div class="two fields">
         <div class="field">
           <label>Cantidad:</label>
-          <input placeholder="Cantidad" name="quantity" type="text">
+          <input id="quantity" placeholder="Cantidad" name="quantity" type="text">
         </div>
        
       </div>
@@ -43,13 +43,14 @@
       <div class="two fields">
           <div class="field">
             <label>Codigo:</label>
-            <input placeholder="codigo" name="username" type="text">
+            <!-- <input placeholder="codigo" name="username" type="text"> -->
+            <p id="informCode"></p>
           </div>
          
         </div>
 
 
-    <div class="ui primary submit button">Submit</div>
+    <div id="btnEnviarForm" class="ui primary submit button">Enviar</div>
     <div class="ui error message"></div>
   </form>
 
@@ -61,6 +62,9 @@
     crossorigin="anonymous"></script>
   <script src="../vendors/semantic.min.js"></script>
   <script src="../js/informe.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/code.js"></script>
+  
 </body>
 
 </html>
