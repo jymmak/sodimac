@@ -1,13 +1,4 @@
-// var config = {
-//   apiKey: "AIzaSyBGrNj6MfOQ3vKoYVoOamInrTKKbMs6KFs",
-//   authDomain: "sodimac-eaf3d.firebaseapp.com",
-//   databaseURL: "https://sodimac-eaf3d.firebaseio.com",
-//   projectId: "sodimac-eaf3d",
-//   storageBucket: "sodimac-eaf3d.appspot.com",
-//   messagingSenderId: "401548083126"
-// };
 
-// firebase.initializeApp(config);
 
 var btnCode = $('#btnCode');
 var btnEnviarForm = $('#btnEnviarForm');
@@ -17,11 +8,10 @@ var category = $('#category');
 var quantity = $('#quantity');
 var code = $('#code');
 
-// var refConvalidaciones = firebase.database().ref().child('chat');
-
 $('#informCode').html(localStorage.code);
 
 btnCode.on('click', validCode);
+
 code.on('keyup', validCodeOn)
 btnEnviarForm.on('click', submitForm);
 
@@ -35,7 +25,9 @@ btnEnviarForm.on('click', submitForm);
     
       if(code.val() == element.codigo) {
         localStorage.code = code.val()
+        localStorage.state = element.estado;
         console.log(localStorage.code)
+        
         btnCode.removeClass('disabled');      
 
       }     
@@ -65,13 +57,7 @@ btnEnviarForm.on('click', submitForm);
 
         localStorage.provider = provider.val();
         localStorage.category = category.val();
-        localStorage.quantity = quantity.val();
-        console.log(localStorage.provider);
-        console.log(localStorage.category);
-        console.log(localStorage.quantity);
-
-        
-    
+        localStorage.quantity = quantity.val();  
 
       }  
       // else {
