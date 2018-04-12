@@ -8,7 +8,7 @@ code.on('keyup', validCodeOn)
 
  function validCode(event) {
    event.preventDefault();
-
+   window.location.href = 'informe.html'
 }
    
   function validCodeOn() {
@@ -17,8 +17,9 @@ code.on('keyup', validCodeOn)
       console.log(element.codigo)
     debugger
       if(code.val() == element.codigo) {
-        alert('codigo correcto');
-        // $boton.removeClass('disabled');
+        btnCode.removeClass('disabled');
+
+        
 
       }
      
