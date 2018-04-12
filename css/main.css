@@ -1,9 +1,10 @@
 body {
+  background-color: #fbe520;
   overflow: hidden;
 }
 
 .logo {
-  margin-top: 180px;
+  margin-top: 250px;
 }
 
 .text-center {
@@ -32,13 +33,17 @@ body {
   font-size: 50px;
 }
 
+.box-gn {
+  margin-top: 100px;
+}
+
 .white {
   color: white !important;
   font-size: 20px !important;
 }
 
 .p-color {
-  background-color: #FFC107 !important;
+  background-color: rgb(255, 156, 7) !important;
 }
 
 .s-color {
@@ -60,9 +65,19 @@ body {
   margin-top: 80px;
 }
 
+.info {
+  font-size: 35px;
+  padding-top: 100px;
+}
+
+.ui.segment {
+  width: 40%;
+  margin-left: 30%;
+}
+
 @media only screen and (max-width: 500px) {
   .logo {
-    margin-top: 180px;
+    margin-top: 250px;
   }
   .box1-g {
     height: 100%;
@@ -79,5 +94,10 @@ body {
   .welcome {
     font-size: 40px;
     margin: 50px !important;
+  }
+
+  .ui.segment {
+    width: 80%;
+    margin-left: 10%;
   }
 }

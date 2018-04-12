@@ -2,7 +2,6 @@ var provider = $('#provider'); //txtNombre
 var category = $('#category'); // txtMensaj//
 var quantity = $('#quantity'); //mensa
 
-
 // creando variables reutilizables
 
 var btnEnviarForm = $('#btnEnviarForm'); //btn
@@ -14,7 +13,6 @@ var refConvalidaciones = firebase.database().ref().child('chat');
 // funcion al boton enviar
 
 btnEnviarForm.on('click', function(){
-  debugger
 
   var nombre = provider.val();
   var mensaje = category.val();
@@ -32,7 +30,6 @@ btnEnviarForm.on('click', function(){
 
 firebase.database().ref('chat')
 .on('value', function(snapshot) {
-  debugger
   var html = '';
   snapshot.forEach(function(e) {
     let element = e.val();
@@ -50,11 +47,7 @@ firebase.database().ref('chat')
  
         </div>
     </div>`;
-
-
   });
-
   contenedor.html(html);
-
 });
 

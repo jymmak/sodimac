@@ -4,36 +4,27 @@ $('.ui.form')
 
       name: {
         identifier: 'proveedor',
-        rules: [
-          {
-            type   : 'empty',
-            prompt : 'Ingrese nombre del proveedor'
-          }
-        ]
+        rules: [{
+          type: 'empty',
+          prompt: 'Ingrese nombre del proveedor'
+        }]
       },
 
       category: {
         identifier: 'category',
-        rules: [
-          {
-            type   : 'empty',
-            prompt : 'Ingrese categoria'
-          }
-        ]
+        rules: [{
+          type: 'empty',
+          prompt: 'Ingrese categoria'
+        }]
       },
 
- 
- 
       quantity: {
         identifier: 'quantity',
-        rules: [
-          {
-            type   : 'empty',
-            prompt : 'Ingrese cantidad'
-          }
-        ]
+        rules: [{
+          type: 'empty',
+          prompt: 'Ingrese cantidad'
+        }]
       },
 
     }
-  })
-;
+  });

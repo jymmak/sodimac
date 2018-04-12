@@ -12,7 +12,6 @@ function showOrders() {
   contenedor.empty();
 
   const allProvedores = data.map(function (distribuidor, index) {
-    debugger
     var template = `<div class="ui vertical menu">
     <div class="item">
       <div class="header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">INFORME</font></font></div>
@@ -51,14 +50,8 @@ function showMisingOrders() {
     contenedor.append(template);
 
     }
-
-
-  
   });
-
 }
-
-
 function showDelivered() {
   contenedor.empty();
 
@@ -80,11 +73,7 @@ function showDelivered() {
     contenedor.append(template);
 
     }
-
-
-  
   });
-
 }
 
 
