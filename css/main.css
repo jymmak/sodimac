@@ -15,12 +15,24 @@ body {
   margin-top: 100px !important;
 }
 
+.car {
+  width: 500px !important;
+}
+
 .margin {
   margin: 10px !important;
 }
 
 .margin-c {
   margin-top: 100px !important;
+}
+
+.box-margin {
+  margin-top: 90px !important;
+}
+
+.card {
+  width: 37% !important;
 }
 
 .code-t {
