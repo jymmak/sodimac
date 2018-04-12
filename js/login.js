@@ -51,6 +51,7 @@ $(document).ready(function () {
 
 
   function logInGoogle() {
+  
 
     event.preventDefault();
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -59,7 +60,6 @@ $(document).ready(function () {
       console.log(user);
 
       observer();
-
       window.location.href = 'almacen.html';
     });
   }
@@ -83,4 +83,5 @@ $(document).ready(function () {
     });
   }
   observer();
-})
+
+}) 
