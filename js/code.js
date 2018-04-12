@@ -38,6 +38,7 @@ function validCodeOn() {
 
     if (code.val() == element.codigo) {
       localStorage.code = code.val()
+      localStorage.state = element.estado;
       console.log(localStorage.code)
       btnCode.removeClass('disabled');
 

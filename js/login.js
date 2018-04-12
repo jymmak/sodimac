@@ -51,7 +51,7 @@ $(document).ready(function () {
 
 
   function logInGoogle() {
-    alert('holitass');
+  
 
     event.preventDefault();
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -60,8 +60,6 @@ $(document).ready(function () {
       console.log(user);
 
       observer();
-
-
       window.location.href = 'almacen.html';
     });
   }
