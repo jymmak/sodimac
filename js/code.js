@@ -9,6 +9,7 @@ var code = $('#code');
 $('#informCode').html(localStorage.code);
 
 btnCode.on('click', validCode);
+
 code.on('keyup', validCodeOn)
 btnEnviarForm.on('click', submitForm);
 
@@ -16,6 +17,21 @@ function validCode(event) {
   event.preventDefault();
   window.location.href = 'informe.html'
 }
+   
+  function validCodeOn() {
+    data.map(function (element) {
+    
+      if(code.val() == element.codigo) {
+        localStorage.code = code.val()
+        localStorage.state = element.estado;
+        console.log(localStorage.code)
+        
+        btnCode.removeClass('disabled');      
+
+      }     
+    });
+
+  }
 
 function validCodeOn() {
   data.map(function (element) {
