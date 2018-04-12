@@ -75,7 +75,7 @@ $('.ui.form')
 // }
 
 // function desabledBtn() {
-//   debugger
+//   
 //   if( validCategory() && validCategory() && validQuantity()) {
 //     btnEnviarForm.removeClass('disabled');
 //   }

@@ -43,7 +43,7 @@ $(document).ready(function () {
   }
 
   function disabledButon() {
-    debugger
+    
     if (validEmail() && validPassword()) {
       btnLogin.removeClass('disabled');
     }

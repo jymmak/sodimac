@@ -33,7 +33,7 @@ function showMisingOrders() {
   contenedor.empty();
 
   const allProvedores = data.map(function (distribuidor, index) {
-    debugger
+    
     if(distribuidor.estado === 'pendiente') {
       var template = `<div class="ui vertical menu">
       <div class="item">
@@ -56,7 +56,7 @@ function showDelivered() {
   contenedor.empty();
 
   const allProvedores = data.map(function (distribuidor, index) {
-    debugger
+    
     if(distribuidor.estado === 'entregado') {
       var template = `<div class="ui vertical menu">
       <div class="item">

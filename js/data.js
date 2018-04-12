@@ -28,7 +28,7 @@ const data = [
     estado: 'pendiente'
   },
   {
-    proveedor: 'Home Collection',
+    proveedor: 'home collection',
     categoría: 'alfombras',
     cantidad: '500',
     codigo: '1420',
