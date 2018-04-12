@@ -19,5 +19,10 @@
 .container-dashboard {
   display: inline-block;
   display: flex;
-  float: right;
+  
+}
+
+.container-item {
+  font-size: 1.2em !important;
+
 }
