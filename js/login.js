@@ -69,31 +69,23 @@ $(document).ready(function() {
 
   function observer() {
     firebase.auth().onAuthStateChanged(function(user) {
-      // var $photoProfile = $('#photoProfile');
-      // var $nameUsers = $('#nameUsers');
+      var imgUser = $('#imgUser');
+      var nameUsers = $('#nameUsers');
       // var $usersComent = $('.usersComent');
       // var $comentsPhoto = $('.comentsPhoto');
 
 
       if (user) {
         console.log('usuario activo');
-        var displayName = user.displayName;
-        var email = user.email;
-        console.log(email);
-        var emailVerified = user.emailVerified;
-        console.log(emailVerified);
-        var photoURL = user.photoURL;
-        console.log(photoURL);
-        var isAnonymous = user.isAnonymous;
-        var uid = user.uid;
-        console.log(uid);
-        var providerData = user.providerData;
-        console.log(providerData);
+        localStorage.displayName = user.displayName;
+        localStorage.email = user.email;
+        localStorage.photoURL = user.photoURL;
+        
 
-        // $photoProfile.attr('src', photoURL);
+        imgUser.attr('src', localStorage.photoURL);
         
         // $comentsPhoto.attr('src', photoURL);
-        // $nameUsers.text(displayName);
+        nameUsers.text(localStorage.displayName);
         // $usersComent.text(displayName);
 
       }else {

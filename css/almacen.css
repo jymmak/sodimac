@@ -1,3 +1,23 @@
 .logo {
   width: 150px;
 }
+
+.right {
+  float: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.container-bandeja {
+  display: inline-block !important;
+}
+
+.container-dashboard {
+  display: inline-block;
+  display: flex;
+  float: right;
+}
